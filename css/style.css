@@ -14,7 +14,6 @@ html {
 }
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: black;
 }
 ul {
   list-style: none;
@@ -45,6 +44,48 @@ ul {
   }
 }
 /* end global rules */
+/* start components */
+.main-heading {
+  text-align: center;
+  padding: 100px;
+}
+.main-heading h2 {
+  position: relative;
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+}
+.main-heading h2::before {
+  content: "";
+  position: absolute;
+  background-color: #333;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+  height: 2px;
+  width: 120px;
+}
+.main-heading h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -38px;
+  border: 2px solid #333;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
+}
+.main-heading p {
+  color: #777;
+  max-width: 100%;
+  width: 550px;
+  margin: 0 auto 100px;
+  line-height: 2;
+}
+/* start components */
 /* start header */
 header {
   position: absolute;
