@@ -2,6 +2,8 @@
 :root {
   --main-color: #19c8fa;
   --transparent-color: rgb(15 116 143 / 70%);
+  --section-padding: 100px;
+  --para-color: #777;
 }
 /* start global rules */
 * {
@@ -47,7 +49,6 @@ ul {
 /* start components */
 .main-heading {
   text-align: center;
-  padding: 100px;
 }
 .main-heading h2 {
   position: relative;
@@ -79,7 +80,7 @@ ul {
   background-color: white;
 }
 .main-heading p {
-  color: #777;
+  color: var(--para-color);
   max-width: 100%;
   width: 550px;
   margin: 0 auto 100px;
@@ -258,3 +259,28 @@ header nav .form i {
   background-color: var(--main-color);
 }
 /* end landing */
+/* start services */
+.services{
+  padding: var(--section-padding) 0;
+}
+.services .box {
+  text-align: center;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .services .boxes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    column-gap: 30px;
+    row-gap: 60px;
+  }
+}
+.services .box h2 {
+ color: var(--main-color);
+ margin: 30px 0;
+}
+.services .box p {
+  color: var(--para-color);
+  line-height: 2;
+}
+/* end services */
