@@ -413,3 +413,43 @@ header nav .form i {
   cursor: pointer;
 }
 /* end portfolio */
+/* start video */
+.video {
+  position: relative;
+}
+.video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.video video {
+  width: 100%
+}
+.video figcaption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--transparent-color);
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 30px;
+  font-weight: normal;
+  font-size: 20px;
+}
+.video figcaption p {
+  margin: 20px 0;
+}
+.video figcaption button {
+  background-color: black;
+  color: white;
+  border: 0;
+  padding: 15px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* end video */
