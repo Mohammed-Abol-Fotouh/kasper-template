@@ -343,3 +343,73 @@ header nav .form i {
   padding-right: 20px;
 }
 /* end design */
+/* start portfolio */
+.portfolio {
+  padding: var(--section-padding) 0;
+}
+.portfolio .shuffle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.portfolio .shuffle li {
+  margin-bottom: 30px;
+}
+.portfolio .shuffle li.active  {
+  background-color: var(--main-color);
+  color: white;
+  padding: 15px;
+}
+.portfolio .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio .boxes figure {
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .portfolio .boxes figure {
+    flex-basis: 50%
+  }
+}
+@media (min-width: 1100px) {
+  .portfolio .boxes figure {
+    flex-basis: 25%
+  }
+}
+.portfolio .boxes figure:hover img {
+  transform: rotate(3deg) scale(1.1);
+}
+.portfolio .boxes figure:hover figcaption {
+  bottom: 0;
+}
+.portfolio .boxes img {
+  max-width: 100%;
+  transition: 0.3s;
+}
+.portfolio figcaption {
+  position: absolute;
+    bottom: -130px;
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+}
+.portfolio figcaption p {
+  color: var(--main-color);
+  margin-top: 10px;
+}
+.portfolio button {
+  margin: 30px auto;
+  background-color: var(--main-color);
+  border: 0;
+  color: white;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* end portfolio */
