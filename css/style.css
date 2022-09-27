@@ -803,6 +803,9 @@ header nav .form i {
   caret-color: var(--main-color);
   width: calc(100% - 130px);
 }
+.subscribe form input[type="email"]::placeholder {
+  color: white;
+}
 .subscribe form input[type="submit"] {
   background-color: var(--main-color);
   border: 1px solid white;
@@ -811,5 +814,79 @@ header nav .form i {
   padding: 10px 20px;
   cursor: pointer;
   width: 130px;
+  text-transform: uppercase;
 }
 /* end subscribe */
+/* start contact */
+.contact {
+  padding: var(--section-padding) 0;
+}
+.contact .content {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .contact .content {
+    flex-direction: column;
+  }
+}
+.contact .content form {
+  flex-basis: 70%;
+}
+.contact .content form input {
+  outline: 0;
+  caret-color: var(--main-color);
+}
+.contact .content form .main-input {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.contact .content form textarea.main-input {
+  height: 200px;
+  outline: 0;
+  caret-color: var(--main-color);
+}
+.contact .content form input[type="submit"] {
+  display: block;
+  margin-left: auto;
+  background-color: var(--main-color);
+  color: white;
+  border: 0;
+  padding: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.contact .content .info {
+  flex-basis: 25%;
+}
+@media (max-width: 768px) {
+  .contact .content .info {
+    order: -1;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.contact .content .info h4 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.contact .content .info span {
+  display: block;
+  color: var(--para-color);
+  margin-bottom: 10px;
+}
+.contact .content .info div:last-of-type {
+  margin-top: 100px;
+}
+@media (max-width: 768px) {
+  .contact .content .info div:last-of-type {
+    margin: 0 0 20px
+  }
+}
+.contact .content .info address {
+  color: var(--para-color);
+  line-height: 2;
+}
+/* end contact */
